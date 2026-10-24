@@ -1,0 +1,16 @@
+{
+  "name": "expense-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Full-stack expense tracker: Express + SQLite API and a React + Vite frontend.",
+  "license": "MIT",
+  "workspaces": ["api", "web"],
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces",
+    "test": "npm test --workspaces"
+  }
+}
